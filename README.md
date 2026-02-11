@@ -255,5 +255,41 @@ This project demonstrates **3D human pose representation** and its **perspective
 - Plots show the human pose from 8 different camera angles (0° to 315°)  
 - Each plot connects the joints of body parts for a clear 2D representation
 --------------------------------------------------------------------------------------------------------------------------
+# 3D Data Cube Operations for Deep Learning
+
+## Overview
+This project demonstrates **3D data cube operations** applied to sales or inventory data across **locations, time (quarters), and item types**. The focus is on performing **OLAP-style operations** such as roll-up, drill-down, slicing, dicing, and pivoting, which are commonly used in **data analysis and preprocessing for deep learning models**.
+
+## Key Features
+- Creation of a 3D data cube (Location × Time × Item Types)  
+- **Roll-up**: Aggregate data across time (quarters)  
+- **Drill-down**: Extract detailed data for specific quarters  
+- **Slicing**: Filter data for a specific location  
+- **Dicing**: Filter data for subcubes (specific locations and quarters)  
+- **Pivoting**: Change the orientation/view of the data cube for analysis  
+
+## Tech Stack
+- Python  
+- NumPy  
+- Pandas  
+
+## Data Structure
+- **Locations**: Chennai, Kolkata, Mumbai, Delhi  
+- **Time**: Q1, Q2, Q3, Q4  
+- **Item Types**: Type A, Type B  
+
+- Data cube shape: `(Quarters × Locations × Item Types)` → `(4 × 4 × 2)`  
+
+## How It Works
+1. Define a 3D NumPy array representing the data cube  
+2. Implement functions for common cube operations:  
+   - `roll_up()`: Aggregate values across time  
+   - `drill_down()`: Extract specific quarter details  
+   - `slice_data()`: Filter by location  
+   - `dice_data()`: Filter by a subcube  
+   - `pivot_data()`: Swap axes for alternative views  
+3. Display results for each operation  
+--------------------------------------------------------------------------------------------------------------------------------
+
 
 

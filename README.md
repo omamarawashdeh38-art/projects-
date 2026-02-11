@@ -197,4 +197,35 @@ It extracts network traffic data, preprocesses it, detects anomalies, and evalua
 - Network intrusion detection  
 - Real-time anomaly detection systems  
 - Cybersecurity and threat monitoring  
--------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+# Project 6 (Data Mining)
+
+## Overview
+This project performs **data preprocessing and association rule mining** on a community participation dataset. The goal is to uncover **patterns and relationships** between demographic attributes, activities, and social engagement.
+
+The analysis helps understand participant behavior, preferences, and potential correlations between features such as age, gender, hobbies, and social club participation.
+
+## Key Features
+- Data cleaning and preprocessing
+  - Handling missing values and outliers
+  - Encoding categorical variables
+  - Feature discretization (e.g., age groups)
+- Exploratory Data Analysis (EDA) with visualizations
+- Association Rule Mining using **Apriori Algorithm**
+  - Extraction of frequent itemsets
+  - Generation of actionable rules with support and confidence thresholds
+- Output: insights on community participation patterns
+
+## Tech Stack
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Plotly)
+- **mlxtend** (TransactionEncoder, Apriori, Association Rules)
+- Data preprocessing and normalization (StandardScaler, MinMaxScaler)
+
+## Dataset
+- Community participation survey data
+- Attributes include:
+  - Demographics (Age, Gender, Marital Status)
+  - Activity metrics (Time in community, Hobbies, Social clubs, Political/Religious involvement)
+  - Purchase behavior (optional)
+
+

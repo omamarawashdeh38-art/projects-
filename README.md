@@ -255,7 +255,7 @@ This project demonstrates **3D human pose representation** and its **perspective
 - Plots show the human pose from 8 different camera angles (0° to 315°)  
 - Each plot connects the joints of body parts for a clear 2D representation
 --------------------------------------------------------------------------------------------------------------------------
-# 3D Data Cube Operations for Deep Learning
+#  3D Data Cube Operations for Deep Learning
 
 ## Overview
 This project demonstrates **3D data cube operations** applied to sales or inventory data across **locations, time (quarters), and item types**. The focus is on performing **OLAP-style operations** such as roll-up, drill-down, slicing, dicing, and pivoting, which are commonly used in **data analysis and preprocessing for deep learning models**.
@@ -290,7 +290,7 @@ This project demonstrates **3D data cube operations** applied to sales or invent
    - `pivot_data()`: Swap axes for alternative views  
 3. Display results for each operation  
 --------------------------------------------------------------------------------------------------------------------------------
-# Deep Learning Project 3: Manual Neural Network for Moon Dataset
+# Deep Learning Project : Manual Neural Network for Moon Dataset
 
 ## Overview
 This project demonstrates the **implementation of a neural network from scratch** to classify points in the **Moon Dataset**, which is a simple 3D dataset for binary classification.  

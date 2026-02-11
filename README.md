@@ -226,6 +226,34 @@ The analysis helps understand participant behavior, preferences, and potential c
 - Attributes include:
   - Demographics (Age, Gender, Marital Status)
   - Activity metrics (Time in community, Hobbies, Social clubs, Political/Religious involvement)
-  - Purchase behavior (optional)
+  ---------------------------------------------------------------------------------------------------------------------------------------
+  # Project 7 (3D Human Pose Projection using Deep Learning Concepts)
+
+## Overview
+This project demonstrates **3D human pose representation** and its **perspective projection** onto 2D planes from multiple camera angles. The system simulates different viewpoints and visualizes the projected poses for analysis and model development.
+
+## Key Features
+- 3D points representation of human body joints  
+- Definition of body parts: left/right arms, legs, torso, and head  
+- Perspective projection from multiple camera positions  
+- Visualization of projected poses in 2D  
+- Configurable camera distance and projection plane  
+
+## Tech Stack
+- Python  
+- NumPy  
+- Matplotlib  
+
+## How It Works
+1. Define 3D coordinates of human pose points  
+2. Group points into body parts for visualization  
+3. Define multiple camera positions around the pose  
+4. Apply **perspective projection** to map 3D points to 2D plane  
+5. Visualize projected poses using Matplotlib  
+
+## Visualization
+- Plots show the human pose from 8 different camera angles (0° to 315°)  
+- Each plot connects the joints of body parts for a clear 2D representation
+--------------------------------------------------------------------------------------------------------------------------
 
 

@@ -364,3 +364,64 @@ By manually implementing the neural network, this project allows you to:
 - **Flexible**: Can add neurons, layers, or change learning rate
 - **Visualization**: Loss curve helps interpret training progress
 --------------------------------------------------------------------------------------------------------------------------
+# Project 8 (Healthcare Classification Project (Machine Learning))
+
+## Overview
+This project focuses on **predicting patient test results** using healthcare data.  
+It demonstrates the **end-to-end machine learning workflow** including data preprocessing, feature engineering, model training, evaluation, and visualization.  
+The goal is to classify patients’ **test results** (e.g., positive/negative) based on various features such as blood type, stay duration, billing amount, and other demographic or clinical attributes.
+
+## Dataset
+- **Filename:** `healthcare_dataset.csv`
+- **Features include:**
+  - Patient demographic information
+  - Blood type (processed into groups and Rh factor)
+  - Admission and discharge dates (used to compute hospital stay duration)
+  - Billing amount
+  - Doctor, Hospital, Room Number (removed after preprocessing)
+- **Target variable:** `Test Results` (categorical)
+- **Size:** Variable depending on CSV
+- The dataset contains **categorical and numerical features**, missing values, and potential duplicates.
+  
+## Data Preprocessing
+1. **Loading the dataset** with Pandas.
+2. **Handling missing values:** Checked for nulls.
+3. **Removing duplicates** to ensure clean data.
+4. **Dropping irrelevant columns**: `Name`, `Doctor`, `Hospital`, `Room Number`.
+5. **Processing dates**:
+   - Convert `Date of Admission` and `Discharge Date` to datetime
+   - Calculate `Stay` duration in days
+   - Drop original date columns
+6. **Blood type processing**:
+   - Split into `Blood Type_P` (A, B, AB, O) and `Blood Type_neg` (+/- Rh factor)
+7. **Encoding categorical features** using `LabelEncoder`
+8. **Scaling numerical features** using `MinMaxScaler` (e.g., `Billing Amount`)
+9. **Correlation analysis** and heatmap visualization for feature relationships
+
+## Feature Selection
+- **Input features (`X`)**: All features except `Test Results`
+- **Target (`y`)**: `Test Results`
+- Features were preprocessed and encoded to be suitable for machine learning algorithms.
+
+## Machine Learning Models
+Multiple classification models were trained and compared:
+
+| Model | Description |
+|-------|-------------|
+| Logistic Regression | Linear model for classification |
+| Random Forest Classifier | Ensemble of decision trees for robust classification |
+| K-Nearest Neighbors | Classifies based on closest training examples |
+| Decision Tree Classifier | Tree-based model for decision rules |
+| Gaussian Naive Bayes | Probabilistic classifier assuming feature independence |
+| Support Vector Machine | Finds optimal hyperplane for classification |
+
+---
+
+## Model Training
+- Dataset split into **train (80%)** and **test (20%)** using stratification
+- Models trained on `X_train` and evaluated on `X_test`
+- Metrics calculated:
+  - **Accuracy**
+  - **Precision**
+  - **Recall**
+  - **F1 Score**

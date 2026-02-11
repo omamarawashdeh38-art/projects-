@@ -107,7 +107,7 @@ The system prepares raw text data for retrieval and machine learning tasks by ap
 - Text similarity and search engines
 - Text classification and NLP-based analysis
 -----------------------------------------------------------------------------------------------------------------------------
-# NLP Project – Extractive Text Summarization
+# Project 4 (NLP Project – Extractive Text Summarization)
 
 ## Overview
 This project implements an **extractive text summarization system** using **Natural Language Processing (NLP)** techniques.  

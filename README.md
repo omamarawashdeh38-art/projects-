@@ -60,3 +60,53 @@ The project focuses on **child anaemia indicators**, including absolute counts a
   - DISTINCT region extraction  
 ----------------------------------------------------------------------------------------------------------------------
 
+# Project3 (Information Retrieval (IR) – Text Preprocessing & Feature Extraction)
+
+## Overview
+This project implements a complete **Information Retrieval (IR) pipeline** for textual data preprocessing and feature extraction.  
+The system prepares raw text data for retrieval and machine learning tasks by applying cleaning, normalization, and multiple vectorization techniques.
+
+## Key Features
+- Loading ARFF text datasets into Pandas DataFrames
+- Text cleaning (punctuation and digit removal)
+- Stopword removal using NLTK
+- Text normalization using stemming
+- Feature extraction using:
+  - Bag of Words (BoW)
+  - TF-IDF
+  - Word2Vec embeddings
+- Exporting processed features for further analysis
+
+## IR Techniques Implemented
+### Text Preprocessing
+- Tokenization
+- Stopword removal
+- Stemming (Porter Stemmer)
+- Noise removal
+
+### Feature Representation
+- **Bag of Words (CountVectorizer)**
+- **TF-IDF Vectorization**
+- **Word2Vec (Average Word Embeddings)**
+- 
+## Tech Stack
+- Python
+- Pandas
+- NLTK
+- Scikit-learn
+- Gensim
+- NumPy
+
+## Output
+- Clean and normalized textual corpus
+- TF-IDF feature matrix (`tfidf.csv`)
+- Numerical vector representations using Word2Vec
+
+## Use Case
+- Information Retrieval systems
+- Text similarity and search engines
+- Text classification and NLP-based analysis
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+

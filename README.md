@@ -107,6 +107,50 @@ The system prepares raw text data for retrieval and machine learning tasks by ap
 - Text similarity and search engines
 - Text classification and NLP-based analysis
 -----------------------------------------------------------------------------------------------------------------------------
+# NLP Project – Extractive Text Summarization
+
+## Overview
+This project implements an **extractive text summarization system** using **Natural Language Processing (NLP)** techniques.  
+The goal is to automatically generate a concise summary by selecting the most important sentences from a given text based on word frequency scoring.
+
+## Key Features
+- Text processing using SpaCy
+- Tokenization (words and sentences)
+- Stopword and punctuation removal
+- Word frequency calculation and normalization
+- Sentence scoring based on word importance
+- Extractive summarization using top-ranked sentences
+
+## Methodology
+1. Load and process text using SpaCy English model  
+2. Remove stopwords, punctuation, and irrelevant tokens  
+3. Compute word frequencies and normalize them  
+4. Score each sentence based on word importance  
+5. Select top sentences using a compression factor  
+6. Generate the final summary by concatenation  
+
+## Techniques Used
+- **SpaCy NLP pipeline**
+- **Tokenization**
+- **Frequency-based sentence scoring**
+- **Heap-based ranking (nlargest)**
+
+## Tech Stack
+- Python
+- SpaCy
+- Heapq
+- NLP fundamentals
+
+## Output
+- Automatically generated extractive summary
+- Reduced text while preserving key information
+
+## Use Case
+- Document summarization
+- Information Retrieval systems
+- News and article summarization
+- NLP preprocessing for downstream tasks
+-------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -60,7 +60,7 @@ The project focuses on **child anaemia indicators**, including absolute counts a
   - DISTINCT region extraction  
 ----------------------------------------------------------------------------------------------------------------------
 
-# Project3 (Information Retrieval (IR) – Text Preprocessing & Feature Extraction)
+# Project 3 (Information Retrieval (IR) – Text Preprocessing & Feature Extraction)
 
 ## Overview
 This project implements a complete **Information Retrieval (IR) pipeline** for textual data preprocessing and feature extraction.  
@@ -151,6 +151,50 @@ The goal is to automatically generate a concise summary by selecting the most im
 - News and article summarization
 - NLP preprocessing for downstream tasks
 -------------------------------------------------------------------------------------------------------------------------
+# Project 5 (Real-Time Intrusion Detection Pipeline)
 
+## Overview
+This project implements a **real-time intrusion detection system (IDS)** using a full **data engineering and machine learning pipeline**.  
+It extracts network traffic data, preprocesses it, detects anomalies, and evaluates a classification model in real time.
 
+## Key Features
+- Real-time data extraction from API endpoints  
+- Timestamp-based feature engineering (Year, Month, Day, Hour, Minute, Second)  
+- Data cleaning, outlier detection (Z-score), and standardization  
+- Encoding categorical features  
+- SVM-based classification with hyperparameter tuning (GridSearchCV)  
+- Model evaluation using cross-validation and test split (F1 score & classification report)  
+- Continuous monitoring and automated pipeline execution  
 
+## Pipeline Steps
+1. **Data Extraction**: Fetch real-time network traffic records from the API  
+2. **Data Transformation**:  
+   - Convert timestamps to separate features  
+   - Encode categorical columns  
+   - Detect and remove outliers  
+   - Standardize numeric features  
+3. **Model Training & Evaluation**:  
+   - Train SVM classifier with GridSearchCV  
+   - Cross-validation evaluation  
+   - F1 score calculation  
+   - Prediction on test subset  
+4. **Monitoring**: Continuous execution with logging and exception handling  
+
+## Tech Stack
+- Python  
+- Pandas, NumPy  
+- Scikit-learn (SVM, preprocessing, cross-validation)  
+- Logging for real-time monitoring  
+- Requests for API data extraction  
+
+## Output
+- Cleaned and standardized dataset  
+- Optimized SVM model for intrusion detection  
+- Real-time monitoring logs  
+- Classification reports and F1 scores  
+
+## Use Case
+- Network intrusion detection  
+- Real-time anomaly detection systems  
+- Cybersecurity and threat monitoring  
+-------------------------------------------------------------------------------------------------------------------

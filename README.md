@@ -290,6 +290,77 @@ This project demonstrates **3D data cube operations** applied to sales or invent
    - `pivot_data()`: Swap axes for alternative views  
 3. Display results for each operation  
 --------------------------------------------------------------------------------------------------------------------------------
+# Deep Learning Project 3: Manual Neural Network for Moon Dataset
 
+## Overview
+This project demonstrates the **implementation of a neural network from scratch** to classify points in the **Moon Dataset**, which is a simple 3D dataset for binary classification.  
+The purpose of this project is to **understand the fundamental mechanics of deep learning**, including forward propagation, backward propagation, gradient computation, and weight updates using **Stochastic Gradient Descent (SGD)** without relying on high-level libraries like TensorFlow or PyTorch.
 
+By manually implementing the neural network, this project allows you to:
+- Gain a deep understanding of **how neural networks learn**
+- Visualize **loss reduction over training**
+- Explore **basic activation functions, loss functions, and optimization methods**
 
+## Dataset
+- **Filename:** `moonDataset.csv`
+- **Features:** 3 input variables (`x1, x2, x3`) representing the coordinates of each point
+- **Target:** Binary classification (0 or 1)
+- **Dataset size:** Variable (depending on CSV)
+- The dataset is ideal for **educational purposes** and simple neural network experiments.
+
+## Neural Network Architecture
+- **Input Layer:** 3 neurons corresponding to input features
+- **Hidden Layer:** 2 neurons  
+  - Each neuron uses a **sigmoid activation function**
+- **Output Layer:** 1 neuron (sigmoid activation) to predict the probability of class 1
+- **Weights and Biases:** Initialized manually with small values
+- **Loss Function:** Squared error  
+  \( Loss = (Target - Output)^2 \)
+- **Optimization:** Stochastic Gradient Descent (SGD)
+- **Number of Epochs:** 20 (adjustable)
+- **Learning Rate:** 0.1 (adjustable)
+
+## Implementation Steps
+
+### 1. Data Loading
+- Load the dataset using **Pandas**
+- Separate **features** (`X`) and **labels** (`y`)
+
+### 2. Initialization
+- Initialize weights (`W1`, `W2`, `W3`) and biases (`b1`, `b2`, `b3`) manually
+- Set learning rate and number of epochs
+
+### 3. Forward Propagation
+- Compute **hidden layer outputs** using:  
+  \( h = \sigma(W \cdot X + b) \)
+- Compute **output layer value** using:  
+  \( y_{pred} = \sigma(W_{out} \cdot h + b_{out}) \)
+
+### 4. Loss Calculation
+- Use **squared error**:  
+  \( L = (y_{true} - y_{pred})^2 \)
+- Track **average loss per epoch**
+
+### 5. Backward Propagation
+- Compute **gradients of loss w.r.t output**
+- Propagate gradients to **hidden layer**
+- Update **weights and biases** using SGD:  
+  \( W = W - \eta \cdot \text{gradient} \)
+
+### 6. Training Loop
+- Iterate over all epochs
+- Iterate over all samples (online learning / SGD)
+- Update weights and biases after each sample
+- Track **loss history** for plotting
+
+### 7. Visualization
+- Plot **loss curve** over epochs using Matplotlib
+- Allows observation of **network convergence**
+
+## Key Features
+- **Manual neural network implementation**: No TensorFlow/PyTorch
+- **Educational focus**: Understand each step of training
+- **Loss tracking**: See how network improves over time
+- **Flexible**: Can add neurons, layers, or change learning rate
+- **Visualization**: Loss curve helps interpret training progress
+--------------------------------------------------------------------------------------------------------------------------
